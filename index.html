@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Wars Battle</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sw-title">
+      <h1 class="playerName">welcome to Star Wars Battleship battle, &nbsp;</h1>
+    </div>
+
+    <div class="wrapper">
+      <div id="result"></div>
+      <div class="content">
+        <div class="game-area">
+          <div class="player-content">
+            <h3 class="title">Player Card</h3>
+            <div id="player" class="card-content white-text"></div>
+          </div>
+        </div>
+        <div id="buttons" class="btn">
+          <h6 class="center-align">Compare:</h6>
+          <div class="count">
+            <span class="countWin">Win = 0</span>
+            <span class="countLose">Lose = 0</span>
+          </div>
+          <!-- <div id="newBtn"></div> -->
+          <button id="newGame" class="btn">New Game</button>
+          <button id="cost" class="compare">Cost</button>
+          <button id="max" class="compare">MaxAtmosSpd</button>
+          <button id="hyper" class="compare">Hyperdrive Rtg</button>
+          <button id="mglt" class="compare">MGLT</button>
+        </div>
+        <div class="content">
+          <div class="game-area">
+            <h3 class="title">Computer's Card</h3>
+            <div id="computer" class="hidden"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
